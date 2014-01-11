@@ -1,8 +1,21 @@
 <template name="projectsList">
-    {{> header}}
+    <div class="panel callout radius header">
+        <div class="row">
+            <div class="small-12 columns">
+                <h1>{{i18n 'projects'}}</h1>
+            </div>
+        </div>
+    </div>
+
     <div class="row">
-        <div class="wrapper">
-            <h1>{{i18n 'projects'}}</h1>
+        <div class="wrapper small-12 columns">
+
+            <section class="projects-list">
+                {{#each projects}}
+                {{> projectsItem}}
+                {{/each}}
+            </section>
+
         </div>
     </div>
 </template>
