@@ -1,0 +1,41 @@
+<template name="projectsDetail">
+    <div class="panel callout radius header">
+        <div class="row">
+            <div class="small-12 columns">
+                <h1>{{project.title}}</h1>
+                <p>{{project.description}}</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="wrapper small-12 columns">
+
+            <section class="detail projects-detail">
+
+                <div class="row">
+                    <div class="wrapper small-6 columns">
+                        <section class="list tasks-list panel">
+                            <h2><small>{{i18n 'tasks'}}</small></h2>
+                            <span><small>
+                                {{project.openTasksNum}} /
+                                {{tasksNum}}
+                            </small></span>
+                        </section>
+                    </div>
+
+                    <div class="wrapper small-6 columns">
+                        <section class="list tasks-list panel">
+                            <h2><small>{{i18n 'members'}}</small></h2>
+                            <span><small>
+                                {{project.membersNum}}
+                            </small></span>
+                        </section>
+                    </div>
+                </div>
+
+            </section>
+
+        </div>
+    </div>
+</template>

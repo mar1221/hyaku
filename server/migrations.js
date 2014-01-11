@@ -8,11 +8,24 @@ Meteor.startup(function() {
     console.log("//--------------------------------------------------------------------------//")
     var projects = [];
 
-    projects.push(
-        { title: 'Hyaku', description: 'Project managment system for small - medium bussinesses.' },
-        { title: 'Realestate Assistant', description: 'Content managment and administration system for realestate agencies' },
-        { title: 'Climbing Mount Everest', description: "Don't forget your sweater!" }
-    );
+    projects.push({
+        title: 'Hyaku',
+        description: 'Project managment system for small - medium bussinesses.',
+        slug: 'hyaku',
+        membersNum: 0
+    });
+    projects.push({
+        title: 'Climbing Mount Everest',
+        description: "Don't forget your sweater!",
+        slug: 'climbing-mount-everest',
+        membersNum: 0
+    });
+    projects.push({
+        title: 'Realestate Assistant',
+        description: 'Content managment and administration system for realestate agencies',
+        slug: 'realestate-assistant',
+        membersNum: 0
+    });
 
     _.each(projects, function(project, index) {
         project = new Project(project);
