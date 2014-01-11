@@ -1,0 +1,33 @@
+{
+  "meteor": {},
+  "dependencies": {
+    "basePackages": {
+      "just-i18n": {
+        "version": "0.1.1"
+      },
+      "iron-router": {
+        "version": "0.6.2"
+      },
+      "zurb-foundation": {
+        "version": "0.1.10"
+      }
+    },
+    "packages": {
+      "just-i18n": {
+        "git": "https://github.com/subhog/meteor-just-i18n.git",
+        "tag": "v0.1.1",
+        "commit": "ce88ac66c0dc107dc2da93ce152616115838101f"
+      },
+      "iron-router": {
+        "git": "https://github.com/EventedMind/iron-router.git",
+        "tag": "v0.6.2",
+        "commit": "ce56e58b45624dce992490f3a1c10f10d3948bae"
+      },
+      "zurb-foundation": {
+        "git": "https://github.com/MixinLabs/meteor-foundation.git",
+        "tag": "v0.1.10",
+        "commit": "545234bc38f7a747a5d69b48f75c5cc77ca8382f"
+      }
+    }
+  }
+}
