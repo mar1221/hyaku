@@ -16,12 +16,17 @@ body .list a:hover, h1 .list a:hover, h2 .list a:hover, h3 .list a:hover, h4 .li
   width: 100%;
 }
 
-/* line 21, ../sass/styles.scss */
-.tasks-list ul h3 {
+/* line 20, ../sass/styles.scss */
+.projects-list h2, .projects-list h3 {
   display: inline-block;
 }
 
 /* line 27, ../sass/styles.scss */
+.tasks-list ul h3 {
+  display: inline-block;
+}
+
+/* line 33, ../sass/styles.scss */
 .footer {
   margin-bottom: 0;
 }
