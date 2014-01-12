@@ -11,3 +11,5 @@ just-i18n
 iron-router
 zurb-foundation
 underscore-string-latest
+accounts-base
+accounts-password

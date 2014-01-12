@@ -2,6 +2,26 @@ Migrations = new Meteor.Collection('migrations');
 
 Meteor.startup(function() {
 
+    if (!Migrations.findOne({name: 'createSampleUsers'})) {
+        console.log("//-----------------------------------------------------------------------//")
+        console.log("//------------//    Starting createSampleUsers Migration    //-----------//")
+        console.log("//-----------------------------------------------------------------------//")
+
+        Accounts.createUser({
+            email: 'takacmarek1221@gmail.com',
+            password: '123456',
+            profile: {
+                firstName: 'Marek',
+                lastName: 'Takáč'
+            }
+        });
+
+        Migrations.insert({name: "createSampleUsers"});
+        console.log("//------------------------------------------------------------------------//")
+        console.log("//------------//     Ending createSampleUsers Migration     //-----------//")
+        console.log("//-----------------------------------------------------------------------//")
+    }
+
     if (!Migrations.findOne({name: "createSampleProjects"})) {
         console.log("//--------------------------------------------------------------------------//")
         console.log("//------------//    Starting createSampleProjects Migration    //-----------//")
@@ -71,7 +91,8 @@ Meteor.startup(function() {
                 createdAt: new Date(),
                 updatedAt: null,
                 closedAt: null,
-                status: null
+                status: null,
+                progress: 80
             },
             {
                 subject: 'Setup the template',
@@ -81,7 +102,8 @@ Meteor.startup(function() {
                 createdAt: new Date(),
                 updatedAt: null,
                 closedAt: null,
-                status: null
+                status: null,
+                progress: 35
             },
             {
                 subject: 'Write tests for user roles',
@@ -91,7 +113,8 @@ Meteor.startup(function() {
                 createdAt: new Date(),
                 updatedAt: null,
                 closedAt: null,
-                status: null
+                status: null,
+                progress: 50
             },
             {
                 subject: 'Lorem ipsum',
@@ -101,7 +124,8 @@ Meteor.startup(function() {
                 createdAt: new Date(),
                 updatedAt: null,
                 closedAt: null,
-                status: null
+                status: null,
+                progress: 75
             }
         ];
 
