@@ -5,11 +5,14 @@
                 <li class="name">
                     <h1><a href="{{pathFor 'homepage'}}">{{i18n 'hyaku'}}</a></h1>
                 </li>
+                {{# if currentUser}}
                 <li class="toggle-topbar menu-icon">
                     <a href="#"><span>Menu</span></a>
                 </li>
+                {{/if}}
             </ul>
 
+            {{# if currentUser}}
             <section class="top-bar-section">
                 <!-- Right Nav Section -->
                 <ul class="right">
@@ -29,6 +32,7 @@
                   <li><a href="{{pathFor 'projectsList'}}">{{i18n 'projects'}}</a></li>
                 </ul>
             </section>
+            {{/if}}
         </nav>
     </div>
 </template>
