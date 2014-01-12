@@ -1,0 +1,21 @@
+<template name="usersNew">
+    <div class="panel header">
+        <div class="row">
+            <div class="small-12 columns">
+                <h1>{{i18n 'user.actions.new'}}</h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="wrapper small-12 columns">
+            <form id="create-user">
+                <input type="email" id="email" placeholder="Email" />
+                <input type="password" id="password" placeholder="Password" />
+                <input type="text" id="first-name" placeholder="First name" />
+                <input type="text" id="last-name" placeholder="Last name" />
+                <button type="submit">Create user</button>
+            </form>
+        </div>
+    </div>
+</template>
