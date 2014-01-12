@@ -18,9 +18,22 @@
                         <section class="list tasks-list panel">
                             <h2><small>{{i18n 'tasks'}}</small></h2>
                             <span><small>
-                                {{project.openTasksNum}} /
-                                {{tasksNum}}
+                                {{project.tasksNum.open}} /
+                                {{project.tasksNum.total}}
                             </small></span>
+                            <dl>
+                                {{#each tasks}}
+                                    <dt>
+                                        <h2>
+                                            <small>
+                                                <a href="/projects/{{project.slug}}/tasks">
+                                                    {{subject}}
+                                                </a>
+                                            </small>
+                                        </h2>
+                                    </dt>
+                                {{/each}}
+                            </dl>
                         </section>
                     </div>
 

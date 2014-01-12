@@ -10,6 +10,15 @@ body, h1, h2, h3, h4, h5, h6, a {
     }
 }
 
+.tasks-list {
+    ul {
+        h3 {
+            display: inline-block;
+        }
+    }
+}
+
 .footer {
     margin-bottom: 0;
 }
+

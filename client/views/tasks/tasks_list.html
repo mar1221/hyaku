@@ -1,0 +1,56 @@
+<template name="tasksList">
+    <div class="panel callout radius header">
+        <div class="row">
+            <div class="small-12 columns">
+                <h1>{{i18n 'tasks'}}</h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="wrapper small-12 columns">
+
+            <section class="tasks-list">
+                {{#each tasks}}
+                <div class="panel callout clearfix">
+                    <h2>
+                        <small>
+                            <a href="">
+                                {{subject}}
+                            </a>
+                        </small>
+                    </h2>
+                    <div class="progress">
+                        <span class="meter" style="width: 40%;"></span>
+                    </div>
+
+                    <div class="row">
+                        <div class="wrapper small-6 columns">
+                            <ul class="no-bullet">
+                                <li>
+                                    <h3><small>Status:</small></h3>
+                                    <span>{{status}}</span>
+                                </li>
+                                <li>
+                                    <h3><small>Priority:</small></h3>
+                                    <span>{{priority}}</span>
+                                </li>
+                                <li>
+                                    <h3><small>Created At:</small></h3>
+                                    <span>{{createdAt}}</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="wrapper small-6 columns">
+                            <h3><small>Description:</small></h3>
+                            <p>{{description}}</p>
+                        </div>
+                    </div>
+                </div>
+                {{/each}}
+            </section>
+
+        </div>
+    </div>
+</template>

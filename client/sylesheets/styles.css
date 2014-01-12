@@ -11,7 +11,12 @@ body .list a:hover, h1 .list a:hover, h2 .list a:hover, h3 .list a:hover, h4 .li
   text-decoration: none;
 }
 
-/* line 13, ../sass/styles.scss */
+/* line 15, ../sass/styles.scss */
+.tasks-list ul h3 {
+  display: inline-block;
+}
+
+/* line 21, ../sass/styles.scss */
 .footer {
   margin-bottom: 0;
 }

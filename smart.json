@@ -2,6 +2,7 @@
   "packages": {
     "just-i18n": {},
     "iron-router": {},
-    "zurb-foundation": {}
+    "zurb-foundation": {},
+    "underscore-string-latest": {}
   }
 }
