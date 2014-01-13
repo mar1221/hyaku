@@ -26,7 +26,16 @@ body .list a:hover, h1 .list a:hover, h2 .list a:hover, h3 .list a:hover, h4 .li
   display: inline-block;
 }
 
-/* line 33, ../sass/styles.scss */
+/* line 34, ../sass/styles.scss */
+form small.error {
+  margin-bottom: 0;
+}
+/* line 36, ../sass/styles.scss */
+form small.error:last-child {
+  margin-bottom: 1rem;
+}
+
+/* line 42, ../sass/styles.scss */
 .footer {
   margin-bottom: 0;
 }

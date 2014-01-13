@@ -10,10 +10,23 @@
     <div class="row">
         <div class="wrapper small-12 columns">
             <form id="create-user">
-                <input type="email" id="email" placeholder="Email" />
-                <input type="password" id="password" placeholder="Password" />
-                <input type="text" id="first-name" placeholder="First name" />
-                <input type="text" id="last-name" placeholder="Last name" />
+                <input type="email" id="email" placeholder="Email" {{#if errors.email}} class="error"{{/if}} />
+                <div>
+                    {{#if errors.email}}{{#each errors.email}}<small class="error">{{this}}</small>{{/each}}{{/if}}
+                </div>
+
+                <!-- <input type="password" id="password" placeholder="Password" /> -->
+
+                <input type="text" id="first-name" placeholder="First name" {{#if errors.profileFirstName}} class="error"{{/if}} />
+                <div>
+                    {{#if errors.profileFirstName}}{{#each errors.profileFirstName}}<small class="error">{{this}}</small>{{/each}}{{/if}}
+                </div>
+
+                <input type="text" id="last-name" placeholder="Last name" {{#if errors.profileLastName}} class="error"{{/if}} />
+                <div>
+                    {{#if errors.profileLastName}}{{#each errors.profileLastName}}<small class="error">{{this}}</small>{{/each}}{{/if}}
+                </div>
+
                 <button type="submit">Create user</button>
             </form>
         </div>

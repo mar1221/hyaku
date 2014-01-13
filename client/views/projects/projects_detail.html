@@ -17,6 +17,9 @@
                     <div class="wrapper small-6 columns">
                         <section class="list tasks-list panel">
                             <h2><small>{{i18n 'tasks'}}</small></h2>
+                            <a href="/projects/{{project.slug}}/tasks">
+                                All tasks
+                            </a>
                             <span><small>
                                 {{project.tasksNum.open}} /
                                 {{project.tasksNum.total}}
@@ -26,7 +29,7 @@
                                     <dt>
                                         <h2>
                                             <small>
-                                                <a href="/projects/{{project.slug}}/tasks">
+                                                <a href="/projects/{{project.slug}}/tasks/{{_id}}">
                                                     {{subject}}
                                                 </a>
                                             </small>
