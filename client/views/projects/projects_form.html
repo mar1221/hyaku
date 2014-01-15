@@ -1,0 +1,35 @@
+<template name="projectsForm">
+    <fieldset>
+        <legend>Create a new project</legend>
+        <div class="row">
+            <div class="small-6 columns">
+                <label>Title *</label>
+                <input type="text" id="title" placeholder="Title" {{#if errors.title}} class="error"{{/if}} />
+                <div>
+                    {{#if errors.title}}{{#each errors.title}}<small class="error">{{this}}</small>{{/each}}{{/if}}
+                </div>
+
+                <label>Description</label>
+                <textarea id="description" placeholder="Description" {{#if errors.description}} class="error"{{/if}}></textarea>
+                <div>
+                    {{#if errors.description}}{{#each errors.description}}<small class="error">{{this}}</small>{{/each}}{{/if}}
+                </div>
+            </div>
+            <div class="small-6 columns">
+                <label>Leader *</label>
+                <select id="leader-id">
+                    {{#each users}}
+                    <option value="{{_id}}">{{profile.firstName}} {{profile.lastName}}</option>
+                    {{/each}}
+                </select>
+
+                <label>Client *</label>
+                <select id="client-id">
+                    {{#each clients}}
+                    <option value="{{_id}}">{{name}}</opsion>
+                    {{/each}}
+                </select>
+            </div>
+        </div>
+    </fieldset>
+</template>

@@ -26,22 +26,22 @@ Meteor.startup(function() {
         console.log("//--------------------------------------------------------------------------//")
         console.log("//------------//    Starting createSampleProjects Migration    //-----------//")
         console.log("//--------------------------------------------------------------------------//")
-        var projects = [
-            { title: 'Lorem', description: 'Lorem Ipsum dolor sit amet consectetur.', slug: 'lorem' },
-            { title: 'Dolor sit amet', description: 'Lorem Ipsum dolor sit amet consectetur.', slug: 'dolor-sit-amet' },
-            { title: 'Adipiscing', description: 'Lorem Ipsum dolor sit amet consectetur.', slug: 'adipiscing' },
-            { title: 'Cras posuere metus', description: 'Lorem Ipsum dolor sit amet consectetur.', slug: 'cras-posuere-metus' },
-            { title: 'Pellentesque urna', description: 'Lorem Ipsum dolor sit amet consectetur.', slug: 'pellentesque' },
-            { title: 'EU', description: 'Lorem Ipsum dolor sit amet consectetur.', slug: 'eu' },
-            { title: 'Sit amet', description: 'Lorem Ipsum dolor sit amet consectetur.', slug: 'sit-amtet' },
-            { title: 'Keram', description: 'Lorem Ipsum dolor sit amet consectetur.', slug:'keram' },
-            { title: 'Cakat Makro', description: 'Lorem Ipsum dolor sit amet consectetur.', slug: 'cakat-makro' },
-            { title: 'Kris Kros', description: 'Lorem Ipsum dolor sit amet consectetur.', slug: 'kris-kros' },
-            { title: 'NK - dolor elis', description: 'Lorem Ipsum dolor sit amet consectetur.', slug: 'nk' },
-            { title: 'Ut a porta 1', description: 'Lorem Ipsum dolor sit amet consectetur.', slug: 'ut-porta-1' },
-            { title: 'Ut a porta 2', description: 'Lorem Ipsum dolor sit amet consectetur.', slug: 'ut-porta-2' }
-        ];
-
+        // var projects = [
+        //     { title: 'Lorem', description: 'Lorem Ipsum dolor sit amet consectetur.', slug: 'lorem' },
+        //     { title: 'Dolor sit amet', description: 'Lorem Ipsum dolor sit amet consectetur.', slug: 'dolor-sit-amet' },
+        //     { title: 'Adipiscing', description: 'Lorem Ipsum dolor sit amet consectetur.', slug: 'adipiscing' },
+        //     { title: 'Cras posuere metus', description: 'Lorem Ipsum dolor sit amet consectetur.', slug: 'cras-posuere-metus' },
+        //     { title: 'Pellentesque urna', description: 'Lorem Ipsum dolor sit amet consectetur.', slug: 'pellentesque' },
+        //     { title: 'EU', description: 'Lorem Ipsum dolor sit amet consectetur.', slug: 'eu' },
+        //     { title: 'Sit amet', description: 'Lorem Ipsum dolor sit amet consectetur.', slug: 'sit-amtet' },
+        //     { title: 'Keram', description: 'Lorem Ipsum dolor sit amet consectetur.', slug:'keram' },
+        //     { title: 'Cakat Makro', description: 'Lorem Ipsum dolor sit amet consectetur.', slug: 'cakat-makro' },
+        //     { title: 'Kris Kros', description: 'Lorem Ipsum dolor sit amet consectetur.', slug: 'kris-kros' },
+        //     { title: 'NK - dolor elis', description: 'Lorem Ipsum dolor sit amet consectetur.', slug: 'nk' },
+        //     { title: 'Ut a porta 1', description: 'Lorem Ipsum dolor sit amet consectetur.', slug: 'ut-porta-1' },
+        //     { title: 'Ut a porta 2', description: 'Lorem Ipsum dolor sit amet consectetur.', slug: 'ut-porta-2' }
+        // ];
+        var projects = [];
         projects.push({
             title: 'Hyaku',
             description: 'Project managment system for small - medium bussinesses.',

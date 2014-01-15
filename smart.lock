@@ -21,6 +21,11 @@
         "tag": "v0.1.1",
         "commit": "ce88ac66c0dc107dc2da93ce152616115838101f"
       },
+      "iron-router": {
+        "git": "https://github.com/EventedMind/iron-router.git",
+        "tag": "v0.6.2",
+        "commit": "ce56e58b45624dce992490f3a1c10f10d3948bae"
+      },
       "zurb-foundation": {
         "git": "https://github.com/MixinLabs/meteor-foundation.git",
         "tag": "v0.1.10",
