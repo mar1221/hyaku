@@ -4,5 +4,8 @@ Meteor.methods({
         Roles.addUsersToRoles(leaderId, ['leader', 'manager'], project._id);
         Roles.addUsersToRoles(Meteor.userId(), ['manager'], project._id);
         return project;
+    },
+    createTask: function(task) {
+        return Task.create(task);
     }
 });

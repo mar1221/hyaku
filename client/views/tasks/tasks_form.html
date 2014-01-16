@@ -1,0 +1,42 @@
+<template name="tasksForm">
+    <fieldset>
+        <legend>Create a new task</legend>
+        <div class="row">
+            <div class="small-12 columns">
+                <label>Subject *</label>
+                <input type="text" id="subject" placeholder="Subject" {{#if errors.subject}} class="error"{{/if}} />
+                <div>
+                    {{#if errors.subject}}{{#each errors.subject}}<small class="error">{{this}}</small>{{/each}}{{/if}}
+                </div>
+
+                <label>Assignee *</label>
+                <select id="assignee-id">
+                    {{#each users}}
+                    <option value="{{_id}}">{{profile.firstName}} {{profile.lastName}}</option>
+                    {{/each}}
+                </select>
+
+                <label>Status *</label>
+                <select id="status">
+                    {{#each statuses}}
+                    <option value="{{id}}">{{name}}</option>
+                    {{/each}}
+                </select>
+
+                <label>Priority</label>
+                <select id="priority">
+                    <option value=""></option>
+                    {{#each priorities}}
+                    <option value="{{id}}">{{name}}</option>
+                    {{/each}}
+                </select>
+
+                <label>Description</label>
+                <textarea id="description" placeholder="Description" {{#if errors.description}} class="error"{{/if}}></textarea>
+                <div>
+                    {{#if errors.description}}{{#each errors.description}}<small class="error">{{this}}</small>{{/each}}{{/if}}
+                </div>
+            </div>
+        </div>
+    </fieldset>
+</template>
