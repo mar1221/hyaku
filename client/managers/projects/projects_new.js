@@ -10,17 +10,25 @@ Template.projectsNew.events({
         var projectAttributes = {
             title: title,
             description: description,
-            leader_id: leaderId,
             client_id: clientId,
             createdBy_id: Meteor.userId()
         };
 
-        var project = Project.create(projectAttributes)
+        // add current user (project creator) and project leader to project members
+        projectAttributes.member_ids = _.unique([Meteor.userId(), leaderId]);
 
-        if (project.errors) {
-            Session.set('errors', project.errors);
+        var project = new Project(projectAttributes);
+
+        if (project.isValid()) {
+            Meteor.call('createProject', project, leaderId, function(error) {
+                if (error) {
+
+                } else {
+                    $('.close-reveal-modal').click();
+                }
+            })
         } else {
-            $('.close-reveal-modal').click();
+            Session.set('errors', project.errors);
         }
 
         return false;

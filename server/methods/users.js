@@ -17,3 +17,7 @@ Meteor.methods({
         return userId;
     }
 });
+
+Meteor.publish(null, function (){
+  return Meteor.roles.find({})
+})

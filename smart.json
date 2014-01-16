@@ -3,6 +3,7 @@
     "just-i18n": {},
     "iron-router": {},
     "zurb-foundation": {},
-    "underscore-string-latest": {}
+    "underscore-string-latest": {},
+    "roles": {}
   }
 }

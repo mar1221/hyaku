@@ -13,6 +13,9 @@
       },
       "underscore-string-latest": {
         "version": "2.3.3"
+      },
+      "roles": {
+        "version": "1.2.6"
       }
     },
     "packages": {
@@ -35,6 +38,11 @@
         "git": "https://github.com/TimHeckel/meteor-underscore-string.git",
         "tag": "v2.3.3",
         "commit": "4a5d70eee48fbd90a6e6fc78747250d704a0b3bb"
+      },
+      "roles": {
+        "git": "https://github.com/alanning/meteor-roles.git",
+        "tag": "v1.2.6",
+        "commit": "f2a9058281f8f2fe028767841d7445aadd6893cf"
       }
     }
   }
