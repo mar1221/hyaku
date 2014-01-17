@@ -15,6 +15,31 @@
 
                 <div class="row">
                     <div class="wrapper small-6 columns">
+
+                        <section class="list latest-activity-list panel">
+                            <h2><small>Latest project activity</small></h2>
+                            <a href="">
+                                View history
+                            </a>
+                            <hr />
+                            <ul class="no-bullet">
+                                {{#each activities}}
+                                    <li>
+                                        <small>{{formatDateTime createdAt}}</small>
+                                        <strong>
+                                            <a href="{{actor.path}}">{{actor.name}}</a>
+                                        </strong>
+                                        {{{buildActivityMessage this}}}
+                                    </li>
+                                {{/each}}
+                            </ul>
+                        </section>
+
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="wrapper small-6 columns">
                         <section class="list tasks-list panel">
                             <h2><small>{{i18n 'tasks'}}</small></h2>
                             <a href="/projects/{{project.slug}}/tasks">

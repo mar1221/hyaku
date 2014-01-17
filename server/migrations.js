@@ -106,9 +106,7 @@ Meteor.startup(function() {
                 assignee_id: user._id,
                 createdAt: new Date(),
                 updatedAt: null,
-                closedAt: null,
-                status: null,
-                progress: 80
+                closedAt: null
             },
             {
                 subject: 'Setup the template',
@@ -118,9 +116,7 @@ Meteor.startup(function() {
                 assignee_id: user._id,
                 createdAt: new Date(),
                 updatedAt: null,
-                closedAt: null,
-                status: null,
-                progress: 35
+                closedAt: null
             },
             {
                 subject: 'Write tests for user roles',
@@ -130,9 +126,7 @@ Meteor.startup(function() {
                 assignee_id: user._id,
                 createdAt: new Date(),
                 updatedAt: null,
-                closedAt: null,
-                status: null,
-                progress: 50
+                closedAt: null
             },
             {
                 subject: 'Lorem ipsum',
@@ -142,9 +136,7 @@ Meteor.startup(function() {
                 assignee_id: user._id,
                 createdAt: new Date(),
                 updatedAt: null,
-                closedAt: null,
-                status: null,
-                progress: 75
+                closedAt: null
             }
         ];
 

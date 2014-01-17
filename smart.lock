@@ -16,6 +16,9 @@
       },
       "roles": {
         "version": "1.2.6"
+      },
+      "moment": {
+        "version": "2.2.1"
       }
     },
     "packages": {
@@ -43,6 +46,11 @@
         "git": "https://github.com/alanning/meteor-roles.git",
         "tag": "v1.2.6",
         "commit": "f2a9058281f8f2fe028767841d7445aadd6893cf"
+      },
+      "moment": {
+        "git": "https://github.com/acreeger/meteor-moment.git",
+        "tag": "v2.2.1",
+        "commit": "9ee12e714afe56b189f53076447b7b54f3012065"
       }
     }
   }

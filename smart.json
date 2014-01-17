@@ -4,6 +4,7 @@
     "iron-router": {},
     "zurb-foundation": {},
     "underscore-string-latest": {},
-    "roles": {}
+    "roles": {},
+    "moment": {}
   }
 }
